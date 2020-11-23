@@ -16,14 +16,14 @@ func playSound(streamer beep.StreamSeeker) {
 	log.Print("playing e.mp3")
 	err := streamer.Seek(0)
 	if err != nil {
-		log.Print("seek", err)
+		log.Print("seek: ", err)
 		return
 	}
 
 	speaker.Clear()
 	speaker.Play(streamer)
 	if streamer.Err() != nil {
-		log.Print("streamer", streamer.Err())
+		log.Print("streamer: ", streamer.Err())
 	}
 }
 

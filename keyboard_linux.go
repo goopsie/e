@@ -32,7 +32,7 @@ func waitForE(k *keylogger.KeyLogger) {
 func keylogInit() *keylogger.KeyLogger {
 	keyboard := keylogger.FindKeyboardDevice()
 
-	log.Println("Found a keyboard at", keyboard)
+	log.Print("Found a keyboard at: ", keyboard)
 	// init keylogger with keyboard
 	k, err := keylogger.New(keyboard)
 	if err != nil {
