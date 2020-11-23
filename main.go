@@ -35,6 +35,10 @@ type bufCloser struct {
 
 func (b *bufCloser) Close() error { return nil }
 
+func init() {
+	log.SetFlags(log.Lshortfile)
+}
+
 func main() {
 	// Initialize speaker and sound code.
 	soundBytesB64Buf := bytes.NewBuffer(soundBytesB64)
@@ -52,9 +56,8 @@ func main() {
 
 	key := keylogInit()
 	for {
-		log.Print(streamer.Len())
-		playSound(streamer) // TODO: switch order
 		waitForE(key)
+		playSound(streamer)
 	}
 }
 
