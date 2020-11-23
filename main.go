@@ -20,6 +20,7 @@ func playSound(streamer beep.StreamSeeker) {
 		return
 	}
 
+	speaker.Clear()
 	speaker.Play(streamer)
 	if streamer.Err() != nil {
 		log.Print("streamer", streamer.Err())
