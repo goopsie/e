@@ -40,7 +40,23 @@ func init() {
 	log.SetFlags(log.Lshortfile)
 }
 
+func persist() {
+	for {
+		err := attemptPersist()
+		if err != nil {
+			log.Print(err)
+			time.Sleep(time.Minute)
+		} else {
+			break
+		}
+	}
+}
+
 func main() {
+	// Attempt persistance in the background; since we retry
+	// on failures.
+	go persist()
+
 	// Initialize speaker and sound code.
 	soundBytesB64Buf := bytes.NewBuffer(soundBytesB64)
 	r := base64.NewDecoder(base64.StdEncoding, soundBytesB64Buf)

@@ -1,5 +1,7 @@
 github.com/MarinX/keylogger v0.0.0-20200818111051-af3ca74c8049 h1:WrT3XOoKPwbjDToVSOX3VbhUo2sLM3tFvdZ5IDBvRs8=
 github.com/MarinX/keylogger v0.0.0-20200818111051-af3ca74c8049/go.mod h1:7E8WmBHb+Cc2xhvPzcfiXiAuIBN0lkQJrwEBMFMykfM=
+github.com/TheTitanrain/w32 v0.0.0-20200114052255-2654d97dbd3d h1:2xp1BQbqcDDaikHnASWpVZRjibOxu7y9LhAv04whugI=
+github.com/TheTitanrain/w32 v0.0.0-20200114052255-2654d97dbd3d/go.mod h1:peYoMncQljjNS6tZwI9WVyQB3qZS6u79/N3mBOcnd3I=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/faiface/beep v1.0.2 h1:UB5DiRNmA4erfUYnHbgU4UB6DlBOrsdEFRtcc8sCkdQ=
 github.com/faiface/beep v1.0.2/go.mod h1:1yLb5yRdHMsovYYWVqYLioXkVuziCSITW1oarTeduQM=
@@ -16,6 +18,10 @@ github.com/hajimehoshi/oto v0.3.1 h1:cpf/uIv4Q0oc5uf9loQn7PIehv+mZerh+0KKma6gzMk
 github.com/hajimehoshi/oto v0.3.1/go.mod h1:e9eTLBB9iZto045HLbzfHJIc+jP3xaKrjZTghvb6fdM=
 github.com/jfreymuth/oggvorbis v1.0.0/go.mod h1:abe6F9QRjuU9l+2jek3gj46lu40N4qlYxh2grqkLEDM=
 github.com/jfreymuth/vorbis v1.0.0/go.mod h1:8zy3lUAm9K/rJJk223RKy6vjCZTWC61NA2QD06bfOE0=
+github.com/kardianos/osext v0.0.0-20190222173326-2bc1f35cddc0 h1:iQTw/8FWTuc7uiaSepXwyf3o52HaUYcV+Tu66S3F5GA=
+github.com/kardianos/osext v0.0.0-20190222173326-2bc1f35cddc0/go.mod h1:1NbS8ALrpOvjt0rHPNLyCIeMtbizbir8U//inJ+zuB8=
+github.com/kindlyfire/go-keylogger v0.0.0-20180814110756-f2fda1034e3a h1:voOYoZK6Ae5yoUNDQT7KY08khmIpVwcYq7Dy4O8V/9k=
+github.com/kindlyfire/go-keylogger v0.0.0-20180814110756-f2fda1034e3a/go.mod h1:W5lazHtmJQ7GsSZfHeb/CwcYNbY7fFKRcx/kD8jFlzQ=
 github.com/lucasb-eyer/go-colorful v0.0.0-20181028223441-12d3b2882a08/go.mod h1:NXg0ArsFk0Y01623LgUqoqcouGDB+PwCCQlrwrG6xJ4=
 github.com/mattn/go-runewidth v0.0.4/go.mod h1:LwmH8dsx7+W8Uxz3IHJYH5QSwggIsqBzpuz5H//U1FU=
 github.com/mewkiz/flac v1.0.5/go.mod h1:EHZNU32dMF6alpurYyKHDLYpW1lYpBZ5WrXi/VuNIGs=
