@@ -12,10 +12,6 @@ import (
 	"github.com/faiface/beep/speaker"
 )
 
-func waitForE() {
-	time.Sleep(time.Second * 5) // TODO
-}
-
 func playSound(streamer beep.StreamSeeker) {
 	log.Print("playing 3.mp3")
 	err := streamer.Seek(0)
@@ -54,10 +50,11 @@ func main() {
 	speaker.Init(format.SampleRate, format.SampleRate.N(time.Second/10))
 	defer speaker.Close()
 
+	key := keylogInit()
 	for {
 		log.Print(streamer.Len())
 		playSound(streamer) // TODO: switch order
-		waitForE()
+		waitForE(key)
 	}
 }
 
