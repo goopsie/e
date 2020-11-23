@@ -2,6 +2,7 @@
 package main
 
 import (
+	"os"
 	"os/user"
 	"path"
 
@@ -19,5 +20,9 @@ func attemptPersist() error {
 	if err != nil {
 		return err
 	}
+	if _, err := os.Stat(ourPath); !os.IsNotExist(err) {
+		return nil
+	}
+
 	return copyFile(path.Join(startupPath, "e.exe"), ourPath)
 }
