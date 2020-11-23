@@ -13,7 +13,7 @@ import (
 )
 
 func playSound(streamer beep.StreamSeeker) {
-	log.Print("playing 3.mp3")
+	log.Print("playing e.mp3")
 	err := streamer.Seek(0)
 	if err != nil {
 		log.Print("seek", err)
